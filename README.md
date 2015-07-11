@@ -22,19 +22,22 @@ Install
 Currently there is no Python package to build and install.  It's just a
 standalone script.
 
- # sudo apt-get update
- # sudo apt-get -y install python2.7 r-base-core r-cran-ggplot2
-
+```
+# sudo apt-get update
+# sudo apt-get -y install python2.7 r-base-core r-cran-ggplot2
+```
 Examples
 ========
 
- # changeset_build_viz.py --log-path=/path/to/zuul.log --start-time="2015-07-10 16:04:30,133" openstack-infra/zuul 12345,1 gate
- Wrote: change.csv
- Wrote: change.png
+```
+# changeset_build_viz.py --log-path=/path/to/zuul.log --start-time="2015-07-10 16:04:30,133" openstack-infra/zuul 12345,1 gate
+Wrote: change.csv
+Wrote: change.png
 
- # changeset_build_viz.py --data-filename="data.csv" --image-filename="chart.png" openstack-infra/zuul 12345,1 gate
- Wrote: data.csv
- Wrote: chart.png
+# changeset_build_viz.py --data-filename="data.csv" --image-filename="chart.png" openstack-infra/zuul 12345,1 gate
+Wrote: data.csv
+Wrote: chart.png
+```
 
 Caveats
 =======
