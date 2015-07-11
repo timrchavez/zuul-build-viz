@@ -1,13 +1,15 @@
 Zuul Build Visualizations
 =========================
 
-This is a build profiling which parses the zuul.log file for build event
-information related to a specific changeset build.  While looking at the
-aggregate times of such events can be useful, so to can profiling a single
-build.  Often times a user of the CI system wants to know where all the
-time is going for a particular build.  While it cannot show the user the
-complete story, it can nicely summarize it.  It can also be useful to an
-operator or admin looking into specific performance issues.
+This is a profiling tool for changeset builds in an #Openstack CI workflow.
+It parses the zuul.log file for build event information related to a specific
+changeset build.  While looking at the aggregate times of such events is
+indeed useful (and pertinent), so can profiling a single build.  Often times
+a user of the CI system wants to know where all the time is going for a
+particular changeset build in their project.  While it cannot give the user
+the complete story, it can nicely summarize it, and give them some answers and
+places to look for improvement.  It can also be useful to an operator or admin
+looking into specific performance issues affecting users.
 
 To get a better idea of what I'm talking about, check out this sample chart:
 
