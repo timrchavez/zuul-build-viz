@@ -1,5 +1,5 @@
-Changeset Build Visualizations
-==============================
+Zuul Build Visualizations
+=========================
 
 This tool parses the zuul.log file, looking for events related to a specific
 changeset (that you specify) and when they happen.  Using this data, a chart
@@ -30,11 +30,11 @@ Examples
 ========
 
 ```
-# changeset_build_viz.py --log-path=/path/to/zuul.log --start-time="2015-07-10 16:04:30,133" openstack-infra/zuul 12345,1 gate
+# zuul_build_viz.py --log-path=/path/to/zuul.log --start-time="2015-07-10 16:04:30,133" openstack-infra/zuul 12345,1 gate
 Wrote: change.csv
 Wrote: change.png
 
-# changeset_build_viz.py --data-filename="data.csv" --image-filename="chart.png" openstack-infra/zuul 12345,1 gate
+# zuul_build_viz.py --data-filename="data.csv" --image-filename="chart.png" openstack-infra/zuul 12345,1 gate
 Wrote: data.csv
 Wrote: chart.png
 ```
