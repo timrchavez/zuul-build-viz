@@ -1,13 +1,13 @@
 Zuul Build Visualizations
 =========================
 
-This tool parses the zuul.log file, looking for events related to a specific
-changeset (that you specify) and when they happen.  Using this data, a chart
-is created depicting the transition time between events.  These charts can
-give us a very nice picture of where all the time is spent during a build,
-including insights into interesting behavior (such as a job being rescheduled
-or an abnormally long wait time between the time a job is submitted and when
-it starts to build).
+This is a build profiling which parses the zuul.log file for build event
+information related to a specific changeset build.  While looking at the
+aggregate times of such events can be useful, so to can profiling a single
+build.  Often times a user of the CI system wants to know where all the
+time is going for a particular build.  While it cannot show the user the
+complete story, it can nicely summarize it.  It can also be useful to an
+operator or admin looking into specific performance issues.
 
 To get a better idea of what I'm talking about, check out this sample chart:
 
