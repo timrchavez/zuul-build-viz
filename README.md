@@ -9,6 +9,10 @@ including insights into interesting behavior (such as a job being rescheduled
 or an abnormally long wait time between the time a job is submitted and when
 it starts to build).
 
+To get a better idea of what I'm talking about, check out this sample chart:
+
+http://i.imgur.com/0craBhV.png
+
 Requirements
 ============
   * Ubuntu 14.04 (Trusty)
